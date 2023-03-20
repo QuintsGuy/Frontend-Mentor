@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<script>
+  $(function() {
+    var data = [];
+
+    $.getJSON('data.json', function(info) {
+      $.each(data.info, function(i, f) {
+        var tblRow = "<tr>" + "<td>" + f.category + "</td>" + "<td>" + f.score + "</td>" +"<td>" + f.icon + "</td>" + "</tr>"
+        $(tblRow).appendTo("#summary-table tbody")
+      })
+    })
+  })
+</script>
+
+<body>
+  <div id="content">
+    <div id="results">
+      <p>Your Result</p>
+      <div id="score-circle">
+        <p>76 of 100</p>
+      </div>
+      <p>Great</p>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="summary">
+      <table id="summary-table" border="2"> 
+        <thead>
+            <th>category</th>
+            <th>score</th>
+            <th>icon</th>
+        </thead>
+        <tbody>
+            
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
