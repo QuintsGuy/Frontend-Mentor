@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:floralwhite;
+    height: 100vh;
+}
+
+.container {
+    margin: auto;
+    margin-top: 250px;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background-image:linear-gradient(hsl(191, 56%, 41%), hsl(241, 81%, 54%));
+    border-radius: 40px;
+    text-align: center;
+    color: whitesmoke;
+    box-shadow: 1px 1px 30px #7b879d;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container a:link, a:visited {
+    background-color: none;
+    border-radius: 20px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container a:hover, a:active {
+    background-color:rgba(192, 192, 192, 60%);
+    color: black;
+}

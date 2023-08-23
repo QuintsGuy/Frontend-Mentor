@@ -128,7 +128,7 @@ body {
         width: 650px;
         height: 465px;
         border-radius: 30px;
-        box-shadow: 1px 1px 30px #7b879d;
+        : box-shadow1px 1px 30px #7b879d;
         position: absolute;
         top: 50%;
         left: 50%;
